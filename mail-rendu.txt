@@ -1,0 +1,26 @@
+Subject : [ELU605] Soumission PR
+
+Bonjour,
+
+Nom Prénom : Hypadrie d'Alexandrie
+
+URL du Compte github : https://github.com/hypadrie
+
+Nom du projet : citusdata/django-multitenant
+
+Url de la Pull Request mergée : https://github.com/citusdata/django-multitenant/pull/57
+
+Description du processus :
+ 
+ * Après avoir lu le README.rst, j'ai constaté que l'on pouvait
+   contribuer directement en effectuant une PR (après avoir fork le
+   repo)
+   
+ * Envoyé le mail sur la liste public http://ml.citus.com/archive/x324
+
+ * J'ai ouvert l'issue https://github.com/citusdata/django-multitenant/issue/134
+
+ * Ma PR a été mergée 
+
+
+Cordialement,
