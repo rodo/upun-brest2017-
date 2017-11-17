@@ -1,0 +1,7 @@
+* Trouver un projet libre
+* Décrire son histoire
+* Comprendre sa gouvernance
+* Décrire son mode contributif
+  * Décrire et analyser
+    * 2 exemples de contributions réussies
+    * 1 exemple de contribution échouée         
