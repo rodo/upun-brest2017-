@@ -1,0 +1,3 @@
+valerian.grosso@imt-atlantique.net
+
+Test via GIT local
