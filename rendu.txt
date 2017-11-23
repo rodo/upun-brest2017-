@@ -1,0 +1,155 @@
+Name:Mohamed Elhidery
+
+Email:mohamed.elhidery@imt-atlantique.com
+
+Porject:Own cloud
+
+
+
+
+
+History
+
+It is a central place where you can store your files and documents. You don´t have to upload your personal data to central closed services like Google Docs, Dropbox or Ubuntu One. All the data is under your own control.
+You can access your files via WebDAV from Linux, Mac and Windows Desktops without a special client 
+On March 2016 they launched OwnCloud Server 9.0 is the biggest OwnCloud release so far with major enhancements like the introducion of innovative collaboration features, improvements to scalability and bringing federation to a new levelhttps://OwnCloud.org/blog/OwnCloud-server-9-0-released/
+Description:
+Music player and server for OwnCloud and Nextcloud. Shows audio files stored in your cloud categorized by artists and albums. Supports mp3, and depending on the browser, many other audio formats too. Supports shuffle play and playlists. The application includes an experimental Ampache server.
+Normally, the Music app detects any new audio files in the filesystem on application start and scans metadata from those to its database tables when the user clicks the prompt. The Music app also detects file removals and modifications on the background and makes the required database changes automatically.
+This app utilizes 2 backend players: Aurora.js and SoundManager2.
+SoundManager2 utilizes the browser's built-in codecs. Aurora.js, on the other hand, uses Javascript and HTML5 Audio API to decode and play music and doesn't require codecs from browser.
+The Music app uses SoundManager2 if the browser has a suitable codec available for the file in question and Aurora.js otherwise. In practice, Firefox and Chrome use SoundManager2 for all supported audio formats
+-------------------------------------------------------------------------------------------------------------------------------
+
+Governance
+
+OwnCloud started with a keynote by Frank Karlitschek at Camp KDE’10 where he talked about the need of a self-controlled free and open source cloud.
+Two years later,(in 2010) Frank announced the start of OwnCloud Inc.
+The company makes it possible for developers to work full time on OwnCloud, organizing OwnCloud events, marketing OwnCloud to a wider audience and supporting companies, governments and schools in their OwnCloud deployments.
+The business model of OwnCloud Inc. is very similar to other successful Open Source companies, offering services and support around OwnCloud for the enterprise. The company is dedicated to working entirely in the open, accelerating development in the areas of its customers' needs while enabling a completely open development process where everybody can contribute.
+The company is  looking for developers to make this happen. Especially PHP developers for the server and Qt developer for the syncing client are welcome.
+The client could also be implemented in a scripting language like for example Python.
+website and wiki: OwnCloud.org
+mailinglist: OwnCloud@kde.org
+git: http://gitorious.org/OwnCloud/
+
+Open TODOs are:
+– Remove the dependency on MySQL to make the installation of your OwnCloud easier. Perhaps SQLite
+– Internationalization of all texts.
+– Better Ajax Web Interface (Plasma Theming perhaps?)
+– Better documentation. Especially for installation.
+
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+
+Supported formats
+
+FLAC (audio/flac)
+MP3 (audio/mpeg)
+Vorbis in OGG container (audio/ogg)
+Opus in OGG container (audio/ogg or audio/opus)
+WAV (audio/wav)
+M4A (audio/mp4)
+M4B (audio/m4b)
+The audio formats supported vary depending on the browser
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+License
+
+OwnCloud is Open Source Software and is licensed under the Affero GNU Public License Version 3 (AGPLv3).
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Issues
+
+Case 1 #567
+
+Status: failed
+
+Description:
+
+When the recipient of a shared audio file unshares it, the file reference is left in the music database of the recipient. To get rid of it, the database has to be regenerated. Fixing this requires a change into OwnCloud/Nextcloud core. #567
+Albums with same name but different artists or years are now different albums"
+3 albums with the same name just because the year is different.
+
+Comments:
+
+A solution for album with songs with different years might be to display the year range (e.g. 2004-2013)
+It was a duplicated cases which was opened #279 ,#307
+he has lots of issues in his uploaded building job #1480.1 Errored
+“You are running a composer with x debug enabled, this has a major impact on runtime performance see https://getcomposer.org/xdebug “
+So his build has been stopped
+The command "sh -c "if [ '$CLOUD' = 'OwnCloud' ] && [ $CORE_BRANCH = 'master' ]; then cd core && make; fi;"" failed and exited with 2 during
+
+You are running composer with xdebug enabled. This has a major impact on runtime performance. See https://getcomposer.org/xdebug
+https://github.com/OwnCloud/music/pull/568
+
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Case 2 
+
+Fix Music app not being localized #592
+
+Status: Passed
+
+Description:
+
+The localization of the Music app has not worked for long time. The main reason for this was that l10n.pl script of the app created .php files containing the translations but the core expected to find .js and/or .json files. As there was no .js/.json files available under the directory l10n, the core interpreted that the Music app has no localizations and always selected English as active language.
+There were also several other l10n-related issues, see commit messages for further details. After fixes made here, there still are some localization issues. But at least the localization can now be tested.
+Fixes #246
+Fixes #337
+
+Comments
+
+One of the commits which was added by the developer includes his comments
+Clone localizations of some languages to another name to enable these languages also on Nextcloud
+- Nextcloud uses different language codes for certain languages compared to OwnCloud. For example, Finnish is 'fi' instead of 'fi_FI' and Norwegian is 'nb' instead of 'nb_NO'.
+- To show localized strings properly both on Nextcloud and OwnCloud, we need to copy the relevant translations so that they are available with both names
+- A script duplicate-lang.py was created for the copying. It can be run by executing 'make l10n-clone' in the build directory. After this, 'make l10n-compile' has to be run to generate code from the translations files (the music.po files).
+- Removed the en@pirate language. It was only a stub and Transifex does not seem to have any translation project for such "language".
+
+Add one missing localizable string to fake-template  this issue was in #246
+- The string under user settings has not got any translations because it was missing from the fake-template
+-------------------------------------------------------------------------------------------------------------------------------
+
+Case 3
+
+Ampache Album cover support #326
+
+Status:Passed
+
+
+Comments
+
+Scanner assumes that user have "cover.jpg" in album directory (following convention: Artist/Album/cover.jpg)
+4 new issues, 4 updated code elements
+In the /add album and get entity part in the code
+He added cover field id as a new Input which was missing
+$album = $this->albumBusinessLayer->addAlbumIfNotExist($album, $year, $artistId,
+ $userId, $coverFileId);
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+
+References:
+		
+https://github.com/OwnCloud/music/pull/326/commits/ec97419dd85e6f8b866663d8aff224cf6158bd63
+https://OwnCloud.com/OwnCloud-agplv3-OwnCloud-commercial-license/
+https://owncloud.org/history/
+https://github.com/OwnCloud/music/pull/326/files
+https://github.com/OwnCloud/music/issues/337
+ https://github.com/OwnCloud/music/issues/246
+https://github.com/OwnCloud/music/pull/592
+https://github.com/OwnCloud/music/issues/279
+https://github.com/OwnCloud/music/issues/307
+https://github.com/OwnCloud/music/pull/568
+https://github.com/OwnCloud/music/blob/master/COPYING
+http://karlitschek.de/2010/03/OwnCloud-development-started/
+
+
+
+
+
