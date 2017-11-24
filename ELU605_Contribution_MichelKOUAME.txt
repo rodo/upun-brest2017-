@@ -1,0 +1,83 @@
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Projet
+
+L'url du projet que j'ai étudié est https://github.com/sameersbn/docker-gitlab
+C'est un projet open source sous licence MIT
+
+Il y a 2 notions qu'il faut s'approprier :
+-Gitlab
+-Docker
+
+Gitlab CE(gitlab community Edition) est un logiciel libre sous licence MIT. A l'origine le produit était nommé gitlab.
+Il a été scindé en deux:
+-Gitlab CE(Gitlab Community Edition) sous licence libre MIT;
+-Gitlab Entreprise Edition  sous licence propriétaire en 2014.
+celui que nous étudions ici est la version libre Gitlab CE
+
+Gitlab a pour but de permettre à des utilisateurs de gérer leur propre repository git(dépot de code),il fonctionne un peu comme git mais propose un outil graphique 
+avec plus de fonctionnalités et est facilement configurable d'accès en HTTP,HTTTPS facilement déployable dans un serveur apache contrairement à git ou il faut bien maitriser la notion de clés SSH
+
+Docker est une technologie permettant d'embarquer des applications dans un container virtuel qui  pourra s'exécuter sur n'importe quelle machine.
+Contrairement à la virtualisation,il utilise l'OS  de sa machine hôte.
+Le but est d'alléger l'infrastrure en facilitant les déploiements d'applications. IL peut permettre le basculement de l'environnement de test à l'environnement de 
+production presqu'en 1 clic.Il est sur licence Apache 2.0
+
+Le but du projet est d'embarquer l'application dans un container docker pour permettre plus facilement son déploiement dans une infrastruture
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Gouvernance
+
+Toute nouvelle contribution de la part d'un contributeur doit être soumis à l'approbation de Niclas Mietz et Sameer Naik
+Toute personne est libre de :
+- Modifier le projet
+- Distribuer le projet 
+- l'utiliser à des fins privés ou commerciales
+
+Les consignes pour installer ou utiliser le logiciel sont dans le README.md(https://github.com/sameersbn/docker-gitlab/blob/master/README.md)
+Il y est aussi expliquer comment contribuer au projet
+
+ 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Histoire
+
+Le projet a été initialement créé par Niclas Mietz (solidnerd). Ensuite se sont ajoutés de nouveaux contributeurs
+Aujourd'hui ,le projet compte :
+- 2335 commits
+- 127 contributeurs actifs,
+- 3 branches,
+- 267 releases( aujourd'hui release 10.1.14)
+
+C'est un projet qui a commencé le 6 octobre 2013 avec Niclas Mietz(vieux de 4 ans), qui a été rejoint par Sameer Naik qui sont les 2 plus importants contributeurs.
+ 
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Contributions
+
+Le projet est sous licence open source MIT.
+Toute personne peut contribuer au projet :
+- écrire de la documentation
+- fixer des bugs
+- ajout de nouvelles fonctionnalités
+- correction des issues ouvertes
+
+Pour les prérequis,il faut au moins connaître les technologies docker et gitlab pour pouvoir véritablement apporter un plus au projet.
+ces contributions doivent être validés par l'équipe à l'origine (Niclas Mietz,Sameer Naik).
+
+
+Quelques exemples de contributions
+
+2 exemples de pull request acceptés 
+
+	https://github.com/sameersbn/docker-gitlab/pull/1259: Ajout d'une variable d'environnment HTTPS pour GITLAB_REGISTRY,
+        l'un des contributeurs a voulu ajouté cette fonctionnalité. Sa pull request n'a été accepté qu'après de nombreux échanges 
+        après de nombreux échanges avec l'équipe et un test(run pour vérifier que tous les checks sont passés) 
+
+	https://github.com/sameersbn/docker-gitlab/pull/1213: Fixer l'anomalie du changement de nom d'utilisateur git
+        c'est l'exemple typique d'un utilisateur qui découvre une anomalie et qui décide de la corriger
+	Sa pull request a été mergée et l'anomalie corrigée.
+
+1 exemple de pull request refusé
+
+	https://github.com/sameersbn/docker-gitlab/pull/1102: Monitorer les process de Gitlab par Prometheus metrics
+	ce contributeur voulait monitorer les process lancés par gitlab,bonne idée mais pull request rejeté
+    Malheurement pour ce contributeur ,sa pull request a été refusé car les tests(checks) ont échoués  
