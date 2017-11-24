@@ -1,24 +1,30 @@
 
+
+Bonjour,
+
+Nom Pr√©nom : Kouadio koffi wilfried
+
+
 URL du Compte github : https://github.com/berba1995
 
-Url de la Pull Request mergÈe :https://github.com/franck123/ui-agenda/commit/567c11a0181f0a8bcefdbc98cef2c38e37504163
+Url de la Pull Request merg√©e :https://github.com/franck123/ui-agenda/commit/567c11a0181f0a8bcefdbc98cef2c38e37504163
 
 Description du processus :
 
 
- * AprËs avoir lu le Fichier LICENCE , j'ai constatÈ que l'on pouvait
-   contribuer directement en effectuant une PR (aprËs avoir fork le
+ * Apr√®s avoir lu le Fichier LICENCE , j'ai constat√© que l'on pouvait
+   contribuer directement en effectuant une PR (apr√®s avoir fork le
    repo)
 
 
-* j'ai ÈtudiÈ le projet pour voir ce que je pouvais apporter comme contribution.
+* j'ai √©tudi√© le projet pour voir ce que je pouvais apporter comme contribution.
 
 
 * J'ai ensuite ouvert l'issue https://github.com/franck123/ui-agenda/issues/2
--ou j'ai demandÈ a apporter une amelioration de l'agenda en permettant aux utilisateurs d'ajouter directement les evenements sur les jours grace a une fenetre pop-up qui s'ouvre en cliquant sur le jour voulu ce qui n'etait pas possible 
+-ou j'ai demand√© a apporter une amelioration de l'agenda en permettant aux utilisateurs d'ajouter directement les evenements sur les jours grace a une fenetre pop-up qui s'ouvre en cliquant sur le jour voulu ce qui n'etait pas possible 
 
 
 -j'ai ensuite fait un pull request de ma solution
- * Ma PR a ÈtÈ mergÈe 
+ * Ma PR a √©t√© merg√©e 
 
 Cordialement,
