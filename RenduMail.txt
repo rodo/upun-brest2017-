@@ -1,0 +1,101 @@
+
+1- Choix du projet : SciPy 
+ 
+SciPy est un projet visant à unifier et fédérer un ensemble de bibliothèques Python à usage scientifique. Il offre des possibilités avancées de visualisation. Afin d'obtenir d'excellentes performances d'exécution (point faible des langages interprétés tel que Python), la plupart des algorithmes de SciPy sont codés en C. Le projet suit la même philosophie que le langage Python à savoir clarté du code, facilité d'apprentissage et extensibilité. 
+
+
+2- Histoire : 
+Dans les années 1990, le langage de programmation Python a été étendu pour inclure un type de tableau pour l'informatique numérique appelé Numeric (Ce paquet a finalement été remplacé par Travis Oliphant qui a écrit NumPy en 2006 comme un mélange de Numeric et Numarray qui avait été commencé en 2001). En 2000, il y avait un nombre croissant de modules d'extension et un intérêt croissant pour la création d'un environnement complet pour l'informatique scientifique et technique. En 2001, Travis Oliphant, Eric Jones et Pearu Peterson ont fusionné le code qu'ils avaient écrit et appelé le paquet résultant SciPy. Le paquet nouvellement créé a fourni une collection standard d'opérations numériques communes audessus de la structure de données de tableau numérique. Peu de temps après, Fernando Pérez a sorti IPython, un shell interactif amélioré largement utilisé dans la communauté informatique technique, et John Hunter a publié la première version de Matplotlib, la bibliothèque de traçage 2D pour l'informatique technique. Depuis lors, l'environnement SciPy a continué de croître avec plus de paquets et d'outils pour l'informatique technique. 
+ 
+ 
+3- Gouvernance : 
+Les fondements de la gouvernance du projet sont basés sur les aspects suivants: 
+-	Ouverture et transparence 
+-	Contribution active 
+-	Neutralité institutionnelle 
+Traditionnellement, le leadership du projet était assuré par un sous-ensemble de contributeurs, appelés Core Developers, dont les contributions actives et cohérentes ont été reconnues par le fait qu'ils ont reçu des «droits d'engagement» sur les dépôts du projet GitHub. En général, toutes les décisions du Projet sont prises par consensus parmi les Développeurs principaux avec la contribution de la Communauté. 
+Bien que cette approche ait bien servi, à mesure que le projet prend de l'ampleur, un besoin d'un modèle de gouvernance plus formel est apparu. Plusieurs entités sont alors mises en place pour la gouvernance. 
+ 
+ 
+3.1- BDFL 
+Le Projet aura un BDFL (Benevolent Dictator for Life = Dictateur Bienveillant pour la Vie), qui est actuellement Pauli Virtanen. En tant que dictateur, le BDFL a le pouvoir de prendre toutes les décisions finales pour le projet. Comme Benevolent, le BDFL, dans la pratique choisit de reporter cette autorité au consensus des canaux de discussion de la communauté et du Conseil de direction. On s'attend à ce que le BDFL affirme rarement son autorité finale. Parce que rarement utilisé, nous nous référons à l'autorité finale du BDFL comme un vote «spécial» ou «prioritaire». Lorsque cela se produit, le contournement BDFL se produit généralement dans les situations où il y a une impasse dans le Conseil de Direction ou si le Conseil d'Administration demande au BDFL de prendre une décision sur un sujet spécifique. Pour assurer la bienveillance du BDFL, le Projet encourage les autres à bifurquer le projet s'ils ne sont pas d'accord avec la direction générale prise par le BDFL. Le BDFL peut déléguer son pouvoir sur une décision ou une série de décisions à un autre membre du Conseil à sa discrétion. Le BDFL peut nommer son successeur, mais il est prévu que le Conseil de pilotage soit consulté sur cette décision. Si le BDFL n'est pas en mesure de nommer un successeur, le Conseil d'orientation prendra cette décision, de préférence par consensus, mais si nécessaire par un vote majoritaire.  
+ 
+3.2- Conseil de pilotage 
+Le projet a un conseil d'orientation composé de contributeurs qui ont produit des contributions substantielles en qualité et en quantité, et qui ont duré au moins un an. Le rôle général du Conseil est d'assurer, en travaillant avec le BDFL et en tenant compte de la contribution de la Communauté, le bien-être à long terme du projet, tant sur le plan technique que communautaire. Le Conseil a un président, qui est chargé de garder les aspects organisationnels du fonctionnement du Conseil et du projet sur la bonne voie. Le Conseil nomme également un gestionnaire de diffusion pour le projet, qui a la responsabilité finale d'une ou de plusieurs versions. Au cours des activités quotidiennes du projet, les membres du conseil participent à toutes les discussions, à l'examen du code et à d'autres activités du projet en tant que pairs avec tous les autres contributeurs et la communauté. Dans le cadre de ces activités quotidiennes, les membres du Conseil n'ont aucun pouvoir ou privilège particulier du fait de leur appartenance au Conseil. Toutefois, compte tenu de la qualité et de la quantité de leurs contributions et de leur connaissance approfondie des logiciels et des services du projet, les membres du Conseil fourniront des conseils utiles, techniques et en termes de direction, aux contributeurs potentiellement moins expérimentés. Le Conseil de pilotage et ses membres jouent un rôle particulier dans certaines situations. En particulier, le Conseil peut: 
+ 
+-	Prendre des décisions sur la portée générale, la vision et la direction du projet. 
+-	Prendre des décisions sur les collaborations stratégiques avec d'autres organisations ou individus. 
+-	Prendre des décisions sur des problèmes techniques spécifiques, des fonctionnalités, des bogues et des demandes d'extraction. Ils constituent le principal mécanisme de guidage du processus de révision du code et de fusion des pull request. 
+-	Prendre des décisions sur les Services qui sont gérés par le Projet et gérer ces Services 
+au profit du Projet et de la Communauté. 
+-	Prendre des décisions lorsque les discussions régulières de la communauté ne produisent pas de consensus sur une question dans un délai raisonnable. 
+-	Mettre à jour les documents de stratégie. 
+
+3.2.1- Membres du conseil 
+Pour devenir membre du Conseil de pilotage, une personne doit être un contributeur au projet et avoir produit des contributions substantielles en qualité et en quantité, et maintenues pendant au moins un an. Les membres potentiels du Conseil sont nommés par les membres actuels du Conseil et votés par le Conseil existant après avoir demandé si le Membre potentiel est intéressé et disposé à servir à ce titre. Le Conseil est initialement formé à partir de l'ensemble des Core Developers existants qui, à partir de janvier 2017, ont été significativement actifs au cours des deux dernières années. Lors de l'examen des membres potentiels, le Conseil examine les candidats avec une vue complète de leurs contributions. Cela inclut, sans s'y limiter, le code, la révision de code, le travail d'infrastructure, la liste de diffusion et la participation à un chat, l'aide communautaire, l'éducation et la sensibilisation, le travail de conception, etc, pour éviter un comportement encourageant qui joue sur les métriques plutôt que sur le bien-être général du projet. 
+Si un membre du Conseil devient inactif dans le projet pour une période d'un an, il sera envisagé de le retirer du Conseil. Avant le retrait, le membre inactif sera contacté pour voir s'il prévoit retourner à la participation active. Sinon, il est supprimé immédiatement après un vote du Conseil. S'il prévoit de retourner bientôt à la vie active, il bénéficie d'une période de grâce d'un an. S'il ne revient pas à la participation active pendant cette période, il est supprimé par un vote du Conseil sans autre période de grâce. Tous les anciens membres du Conseil peuvent à nouveau être considérés comme membres à tout moment, comme tout autre Contributeur de projet. Le Conseil se réserve le droit d'expulser les membres actuels, autres que le BDFL, s'ils sont jugés être préjudiciables au bien-être du projet, et les tentatives de communication et de résolution des conflits ont échoué. 
+ 
+3.2.2- Président du conseil 
+Le président est nommé par le conseil de pilotage. Il peut rester aussi longtemps qu'il le souhaite, mais peut démissionner à tout moment. Le président est responsable de: 
+-	Commencer une revue de la direction technique tous les deux ans, vers la mi-avril et la mi-octobre. 
+-	À la même période de l'année, résumer les mises à jour et les problèmes organisationnels pertinents de la période précédente et demander des commentaires / suggestions sur la liste de diffusion. 
+-	Veiller à ce que la composition du Conseil de pilotage reste à jour. 
+-	S'assurer que les questions discutées à huis clos par le Conseil de pilotage sont résumées sur la liste de diffusion afin de tenir la communauté informée. 
+-	S'assurer que d'autres documents organisationnels importants (par exemple, Code de conduite, Accord de parrainage fiscal) restent à jour après leur ajout. 
+ 
+ 
+3.2.3- Gestionnaire de versions  
+Le responsable de la publication a la responsabilité finale de faire une publication. Ceci comprend: 
+-	Proposer et décider du moment d'une libération. 
+-	Déterminer le contenu d'une publication au cas où il n'y aurait pas de consensus sur un changement ou une fonctionnalité en particulier. 
+-	Créer la version et l'annoncer sur les chaînes publiques pertinentes. 
+ 
+ 
+4- Mode contributif 
+Le développement de la librairie SciPy est sponsorisé et supporté par une communauté ouverte de développeurs. Il est également soutenu par Numfocus qui est une fondation communautaire pour soutenir la science reproductible et accessible.  
+Il y a plusieurs façons de contribuer: 
+-	Contribuer au nouveau code 
+-	Correction de bugs et autres travaux de maintenance 
+-	Améliorer la documentation 
+-	Examen des pull request 
+-	Travailler sur le site scipy.org 
+-	Répondre aux questions et participer aux listes de diffusion scipy-dev et scipy-user. 
+4.1- Contribuer au nouveau code 
+Presque tout le nouveau code ajouté à SciPy a en commun le fait qu'il est potentiellement utile dans plusieurs domaines scientifiques et qu'il s'inscrit dans le cadre des sous-modules SciPy existants. En principe, de nouveaux sous-modules peuvent être ajoutés, mais c'est beaucoup moins commun. Pour le code spécifique à une seule application, un projet existant peut utiliser le code.  
+4.2- Contribuer en aidant à maintenir le code existant 
+La maintenance consiste à corriger les bugs, à améliorer la qualité ou le style du code, à mieux documenter les fonctionnalités existantes, ajouter des tests unitaires manquants, mettre à jour les scripts de build, etc. La liste des problèmes SciPy contient tous les bugs signalés, problèmes de construction / documentation, etc. contribue à améliorer la qualité globale de SciPy, et est également un bon moyen de se familiariser avec le projet. Il est généralement préférable de commencer en écrivant un test unitaire qui montre le problème, c'est-à-dire qu'il doit passer mais ne fonctionne pas.  
+4.3- Examen des pull requests 
+La révision des pull request est la bienvenue et constitue un moyen précieux d'accélérer la progression du projet. Si une personne possède des connaissances / expériences spécifiques dans un domaine particulier (par exemple "algorithmes d'optimisation" ou "fonctions spéciales"), il est particulièrement important d'examiner les relations publiques dans ce domaine - parfois les pull requests avec un code technique doivent attendre longtemps avant d'être fusionnés. 
+Les évaluateurs se posent les questions suivantes avant de valider des pull request: 
+-	Ce changement a-t-il été discuté de manière adéquate (pertinent pour les nouvelles fonctionnalités et les changements de comportement existant)? 
+-	La fonctionnalité est-elle scientifiquement saine? Les algorithmes peuvent être connus pour fonctionner sur la base de la littérature; autrement, regarder de plus près l'exactitude est très précieux. 
+-	Le comportement prévu est-il clair dans toutes les conditions (par exemple, des entrées inattendues telles que des tableaux vides)? 
+-	Le code répond-il aux critères de qualité, de test et d'attente de documentation ? 
+ 
+5- Description et analyse 
+ 
+5.1- Deux exemples de contributions réussies 
+5.1.1 Premier exemple 
+Lien de la contribution : https://github.com/scipy/scipy/pull/8178/files 
+Cette contribution a corrigé une erreur de formatage de chaîne. 
+
+5.1.2 Deuxième exemple 
+ 
+Lien de la contribution : https://github.com/scipy/scipy/pull/8186/files 
+Cette contribution a consisté à la correction de la dérivée de « spherical_jn (1, 0) » 
+ 
+5.2- Un exemple de contribution échouée 
+Lien de la contribution refusée : https://github.com/scipy/scipy/issues/3100 
+Cette contribution a été refusée car il y a eu une erreur de segmentation 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Webographie : 
+https://fr.wikipedia.org/wiki/SciPy 
+https://docs.scipy.org/doc/scipy/reference/hacking.html 
+https://docs.scipy.org/doc/scipy/reference/dev/governance/governance.html 
