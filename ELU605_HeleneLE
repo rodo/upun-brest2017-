@@ -1,0 +1,33 @@
+Projet libre : LARAVEL
+
+•	Historique : 
+LARAVEL est un framework web open-source écrit en PHP respectant le principe modèle-vue-contrôleur et entièrement développé en programmation orientée objet. Il a été créé par Taylor OTWELL en juin 2011 et est distribué sous licence MIT. LARAVEL a été développé pour simplifier la création de site WEB. Il fournit des fonctionnalités en termes de routage de requête, de mapping objet-relationnel, d'authentification, de vue, de migration de base de données, de gestion des exceptions et de test unitaire.
+
+•	Gouvernance : 
+Le développement de ce framework est toujours dirigé par Taylor OTWELL. De nombreux sponsors comme   Vehikl, Tighten Co., British Software Development contribuent financièrement au projet.
+
+•	Mode contributif :
+Ses sources sont hébergées sur GitHub et tout le monde a la possibilité d’émettre une demande pour les modifier. Le site LARAVEL propose une documentation complète décrivant l’utilisation du framework mais aussi les manières d’y contribuer. On retrouve parmi celles-ci :
+-Bug report
+-Core development discussion
+-Security vulnerabilities
+
+
+•	Les contributions réussies :
+1)	Le 21 novembre 2017, m1guelpf a mis à jour la dépendance de vue (Vue dependency) à sa dernière version. Cette contribution a été acceptée par Taylor Otwell. 
+https://github.com/laravel/laravel/pull/4493/files: lien vers le fichier modifié
+https://github.com/laravel/laravel/pull/4493: lien vers la conversation
+
+2)	Le 17 novembre 2017, JeremyBellaiche a ajouté un sponsor dans la liste (WebL’Agence). Cet ajout a été accepté et mergé par Taylor Otwell.
+https://github.com/laravel/laravel/pull/4491/files: lien vers le fichier modifié
+
+
+La contribution échouée :
+Le 9 novembre 2017, pranayaryal a corrigé une faute d’orthographe, avec comme titre du commit « Fix a small grammar #4484 ». Pranayaryal a rajouté le s qui manquait à la 3ème personne du singulier en anglais. Mais Taylor Otwell pense que la modification n’est pas correcte/complète et a donc refusé la modification. Il a indiqué dans la conversation ci-dessous qu’il corrigera la faute lui-même.
+https://github.com/laravel/laravel/pull/4484/files: lien vers le fichier modifié
+https://github.com/laravel/laravel/pull/4484: lien vers la conversation
+
+
+
+
+
