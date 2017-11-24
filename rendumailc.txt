@@ -1,0 +1,24 @@
+
+URL du Compte github : https://github.com/berba1995
+
+Url de la Pull Request mergée :https://github.com/franck123/ui-agenda/commit/567c11a0181f0a8bcefdbc98cef2c38e37504163
+
+Description du processus :
+
+
+ * Après avoir lu le Fichier LICENCE , j'ai constaté que l'on pouvait
+   contribuer directement en effectuant une PR (après avoir fork le
+   repo)
+
+
+* j'ai étudié le projet pour voir ce que je pouvais apporter comme contribution.
+
+
+* J'ai ensuite ouvert l'issue https://github.com/franck123/ui-agenda/issues/2
+-ou j'ai demandé a apporter une amelioration de l'agenda en permettant aux utilisateurs d'ajouter directement les evenements sur les jours grace a une fenetre pop-up qui s'ouvre en cliquant sur le jour voulu ce qui n'etait pas possible 
+
+
+-j'ai ensuite fait un pull request de ma solution
+ * Ma PR a été mergée 
+
+Cordialement,
