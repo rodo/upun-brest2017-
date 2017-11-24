@@ -1,14 +1,33 @@
-Année académique : 2017/2018                                                                          IMT Atlantique -Brest
+
+Subject : [ELU605] Soumission PR
+
+Bonjour,
+
+Nom Prénom : TAGRO Rabet Romuald Jean Martial
+
+URL du Compte github : https://github.com/JM0007
+
+Nom du projet : ansible/ansible
+
+Url des Pull Requests : https://github.com/ansible/ansible/pull/30696 (Echec Pull request (PR))
+                        https://github.com/ansible/ansible/pull/30707 (PR mergée)
+                        https://github.com/ansible/ansible/pull/30742 (PR mergée)
+                       
 
 
-ELU 605
 
-ÉTUDE SUR LA CONTRIBUTION A UN PROJET LIBRE PYTHON : 
+Cordialement,
+
+
+                                         ÉTUDE SUR LA CONTRIBUTION A UN PROJET LIBRE PYTHON : 
+                                                         CAS  D’ANSIBLE 
+
+
+Année académique : 2017/2018                                                                          
+IMT Atlantique -Brest
+
+ELU 605: ÉTUDE SUR LA CONTRIBUTION A UN PROJET LIBRE PYTHON : 
 CAS  D’ANSIBLE
-
-
-
-
 
 Étudiant :                                                                               
 Tagro Rabet Romuald Jean Martial                               
@@ -19,12 +38,10 @@ M. Rodolphe Quiédeville
 
 
 
-
-
-
 I- PRÉSENTATION 
 
 ANSIBLE est un outil de configuration et d’orchestration destiné essentiellement au administrateurs système. Il a été codé en python et permet notamment l’automatisation du déploiement d’applications, de la configuration de serveurs ou d’équipements réseaux. 
+
 
 
 II- HISTORIQUE ET GOUVERNANCE
@@ -33,6 +50,8 @@ ANSIBLE est un projet Open-source de Python crée en 2013 et racheté par Red Ha
 Ansible est devenu très attractif et cela est dû à plusieurs facteurs. Red Hat a toujours voulu entretenir la popularité d’Ansible : « Ansible entrait dans un tiers de tous les contrats Red Hat »
 affirma le CEO de Red Hat, Jim Whitehurst. 
 En effet cela vise à attrirer aussi les Entreprises à opter pour cette solution (avec une surcouche Ansible payante pour les Entreprises) d’autant plus que le rachat par Red Hat a sans doute augmenté la crédibilité du support d’Ansible.
+
+
 
 III- POLITIQUE DE CONTRIBUTIONS 
 
@@ -48,38 +67,35 @@ EXEMPLES DE CONTRIBUTIONS RÉALISÉES
 
 Pull-request rejetée
 
-1) On a dans cet exemple une pull request rejetée ( un des 2 commits du contributeur avait été pourtant accepté) https://github.com/ansible/ansible/pull/30696 
- Capture Git Hub 0
+1) On a dans cet exemple une pull request rejetée de dj4ngo qui n'a pas pu voir sa PR mergée car selon un commentaire des tests liés au problème renvoyaient une erreur due à son fichier modifié "docker_services_py35_compat"  ( un des 2 commits du contributeur avait été pourtant accepté) 
+(lien vers la PR:https://github.com/ansible/ansible/pull/30696 )
+ 
 
 2) un autre exemple ici est la vérification et la fermeture d'un rapport de bug obsolète sur le module iptables pour Ansible (tous les détails sur https://github.com/ansible/ansible/issues/21182). 
 Ici le contributeur (p53) a ouvert une ‘Issue’ sur un rapport sur un bug , qui s’est vu fermée car ce problème (bug) était obsolète. La pull request émise n’a pas été mergée.
 
-Capture Git hub 1
 
 Pull requests mergées
 
 1) mise à jour de la liste des maintainers
 ( plus d’informations sur https://github.com/ansible/ansible/pull/30742)
- Capture sur Git Hub 2. 
-On a dans ce cas l’acceptation par l’auteur original du dépôt des modifications/ corrections et les branches des contributions acceptées ont donc fusionnées avec la branche principale master ( ici répertoire principal « ansible : devel ») .  S-hertel a vu son’ Issue’(problème soulevé ) resolu par le contributeur msherer sur le fichier modifié ignore_obrien ) et a donc accepté la requête (mergé) émise par msherer pour fusionner sa branche sur la branche principale. C’est comme une nouvelle photo (1 commit ,nouvelle version ) du projet qu’il a envoyé. 
+ 
+On a dans ce cas l’acceptation par l’auteur original du dépôt des modifications/ corrections et les branches des contributions acceptées ont donc fusionnées avec la branche principale master ( ici répertoire principal « ansible : devel ») .  S-hertel a vu son’ Issue’(problème soulevé ) resolu par le contributeur msherer sur le fichier modifié ignore_obrien ) et a donc accepté la requête de ceui-ci pour fusionner sa branche sur la branche principale. C’est comme une nouvelle photo (1 commit ,nouvelle version ) du projet qu’il a envoyé. 
 Le nom du problème résolu dans la description du commit est « #30742 »
 
 2) l’ajout d'un test unitaire pour le plugin d'inventaire YAML
 ( plus d’informations sur https://github.com/ansible/ansible/pull/30707 )
 
-Capture Git Hub 3
+Ici également, la branche créée par mattclay pour résoudre le problème a été fusionné à la branche principale.
+Ici mattclay a ‘validé’ 6 états du projet (6 commits) que lui a balancés 4383 à travers sa pull requests. 
 
-Ici également, la branche créée par mattclay pour résoudre le problème ( fichier feature/test-inventory) a été fusionné à la branche principale.
-Ici mattclay a ‘validé’ 6 états du projet (6 commits) que lui a balancé 4383 à travers ses pull requests. 
 
-Il convient de remarquer un nombre élevé de forks pour les branches afin d’avoir une permission (autant les contributions à des problèmes sont nombreux) et il est nécessaire de faire un fork  ( ‘mirroir’ du projet qu’on regarde et qui ne nous appartient pas pour en avoir une version à nous pour modifier) car on est en Open-source et pour éviter des codes innombrables venant de toute part dans le cadre d’un projet, il est important d’avoir un système de validation.  
+Il convient de remarquer un nombre généralement élevé de forks afin d’avoir une permission (autant les contributions à des problèmes sont nombreux) et il est nécessaire de faire un fork  ( comme un ‘mirroir’ du projet qu’on regarde et qui ne nous appartient pas pour en avoir une version à nous pour modifier) car on est en Open-source et pour éviter des codes innombrables venant de toute part dans le cadre d’un projet, il est important d’avoir un système de validation.  
  
 
 
 
-
 IV- PERSPECTIVES
-
 
 Red Hat, qui mise gros dans la notoriété d’Ansible et la maturité de l’outils continue d’être favorable à la formation des développeurs Pythons mais également des chercheurs , étudiants sur la questions du développement des modules Ansibles. Un second atelier sur la question est organisé depuis le mardi 21 novembre 2017 et s’étendra sur une semaine. Son but est de former et informer sur les contributions au niveau des aspects suivants : 
 - vérification, amélioration de la compatibilité des modules avec Python 3
@@ -97,7 +113,6 @@ L'atelier a débuté par une présentation du "Workflow de contribution" pour le
 
 
 WEBOGRAPHIE
-
 
 https://github.com/ansible/ansible/pull/30696 
 https://github.com/ansible/ansible/issues/21182
