@@ -1,0 +1,90 @@
+﻿[ELU 605 ]: Ecologie du logiciel
+
+Etude du système de contribution du logiciel libre. Cas Numpy  
+
+Etudiant
+KOUASSI Henri Michel Désiré
+
+Enseignant
+Rodolphe Quiédeville
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+INTRODUCTION
+
+
+Ces dernières années L’Open-Source fait couler beaucoup d’encre à tel point qu’il est au coeur du business modèle de grand nom de l’industrie du numérique. Des géants tel Microsoft leader des logiciels propriétaires proposent maintenant des solutions open-source.  L'industrie du logiciel libre à le vent en poupe depuis cette dernière décennie, comprendre ses rouages bien plus qu’important mais nécessaire. 
+
+Dans cette étude nous étudierons le système contributif du logiciel libre, plus précisément une communauté open-source. Notre choix c’est porté sur le projet libre Numpy qui est le package fondamental pour l'informatique scientifique avec Python [1] qui est sous licence BSD [2].
+
+Nous débuterons cette analyse par la présentation de l’histoire de ce projet libre (NumPy), puis nous aborderons sa gouvernance et terminerons par la description de son mode contributif.
+
+
+
+I. Numpy: L'histoire
+Python est le langage scientifique de programmation le plus populaire mais il n’était pas destiné à un usage scientifique. L’attention de la communauté scientifique sur ce projet a fait qu'il fallait adapter ce langage au besoin de cette communauté. C’est ainsi qu’un des concepteur de Python a implémenté des extensions destinées à l’usage scientifique notamment le calcul matriciel (1995).  Jim Fulton, Jim Hugunin ont amélioré ces extensions on parle alors de “Numeric” ou “Numerical Python” d’où “NumPy”. Peu à peu de nouvelles personnes tels Avid Ascher, Konrad Hinsen et Travis Oliphant contribuent au projet. Le projet Numeric fait face à un projet concurrent Numarray plus performant . Il existe donc deux communautés qui produisent les mêmes bibliothèques, Pourquoi ne pas fusionner ? Début 2005, le développeur de NumPy, Travis Oliphant, a voulu unifier la communauté autour d'un seul paquet et a porté les fonctionnalités de Numarray à Numeric, publiant le résultat sous NumPy 1.0 en 2006. Ce nouveau projet fait parti de Scipy. C’est la naissance réelle de la communauté NumPy. La dernière version stable est NumPy1.13.3.[3] 
+
+
+II. La gouvernance du projet
+La gouvernance du projet Numpy repose sur trois fondements :
+* l’Ouverture et la transparence
+* la Contribution active
+* Neutralité institutionnelle
+
+
+De manière générale toutes les décisions concernant l’orientation et la vision du projet son prises par consensus ils affirment “Pour nous, le consensus signifie que nous confions à chacun le droit d'opposer son veto à tout changement s'il le juge nécessaire” [4]. 
+Les contributeurs et les fondateurs sont donc sur le même pied d’égalité, chacun à son mot à dire concernant les axes de développement du projet. Pour fédérer cette communauté, il est mit en place un conseil de pilotage composé des meilleurs contributeurs. Le rôle du conseil d’orientation est de veiller à la bonne marche du projet. 
+Cependant les membres du conseil n’ont pas de pouvoir sur les autres membres de la communauté. 
+De Plus aucune institution ou personne ne peut influencer l’orientation et les axes de développement de NumPy. NumPy, se définit ainsi comme une communauté libre où les membres peuvent partager librement  leur opinion.
+
+
+III. Le Mode contributif
+Toute personne le désirant, peut contribuer au projet NumPy. Cependant, la communauté met à la disposition des nouveaux contributeurs toute la documentation technique nécessaire pour faire une “Pull Request” de qualité.
+
+
+		1. Exemples de contributions réussites
+
+
+		* DOC, BLD: Update site.cfg.example on the MKL part. #10065
+		Cette PR a été mergée avec succès. Pourquoi ?
+		 Après la mise à jour d’un composant (MLK) certaines fonctionnalités sont obsolètes, chose qui n’est toujours pas présente la documentation. Les exemples d’utilisation du composant ne fonctionnent pas dans la nouvelle version, il faut donc la documenter. Ainsi, chaoyu3 propose sa solution qui ne présente aucun conflits et qui respecte les normes du projet. Le mainteneur vérifie la documentation proposée par chaoyu3 ensuite il valide la PR. Le respect  et la maîtrise du guide du contributeur a permi ce résultat.
+		* BUG: Changed dump(a, F) so it would close file #10055
+
+
+		Un autre exemple de contributions réussites. Cette contribution vient pour régler un bug comme dans le cas précédent. La solution proposée par orbit-stabilizer résout le bug mais il eu un problème car son “commit” n’a pas respecté certaines règles car il devait commencer par “BUG:” le mainteneur a donc modifié le commit pour que la solution soit mergée.
+
+		2. Exemple de contribution échoué
+
+
+		* BUG: Fix potential segfault related to Borrowed_PyMapping_GetItemString #9851
+		* Ici le contributeur voulait résoudre un bug, il fait donc une PR. Il s'aperçoit ensuite après l’envoi de sa PR, une erreur du type : “Some checks were not successful”. Il se rend compte que sa solution en voulant résoudre le problème en créait de nouveaux alors il retire sa PR. Il est vraiment intéressant de voir ce genre de problèmes car on a tendance après avoir fait du code, envoyer notre contribution à la communauté souvent sans avoir fait tous les tests proposés dans le guide du développeur fourni par la communauté. Ce contributeur aurait pu se rendre compte plutôt s’il avait suivit à la lettre la documentation fournie.
+
+
+
+
+
+
+
+CONCLUSION
+
+
+Nous avons étudié le système contributif d’une communauté Open-source , on peut en conclure que l’open-source est un environnement libre où on est libre de s’exprimer, partager ses sentiments. Cependant pour le bon fonctionnement de cette communauté il faut respecter à lettre les règles de la communauté (l’exemple des PR).
+_______________________________________________________________________________________________________________________________________________
+
+
+BIBLIOGRAPHIE
+
+
+[1] : NumPy official Website, disponible sur http://www.numpy.org , visitée le 24/11/2017.
+
+
+[2] :NumPy BSD 3-clause "New" or "Revised" License, Disponible sur 
+ https://github.com/numpy/numpy/blob/master/LICENSE.txt , visitée le 24/11/2017.
+
+
+[3] : Wikipedia, the free encyclopedia,Numpy History, disponible sur ,
+ https://en.wikipedia.org/wiki/NumPy#History, visitée le 24/11/2017.
+
+
+[4] :Numpy Governance, disponible sur
+https://docs.scipy.org/doc/numpy-1.13.0/dev/governance/governance.html#governance
+, visitée le 24/11/2017.
