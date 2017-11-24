@@ -1,0 +1,58 @@
+Subject : [ELU605] Soumission PR 
+
+Nom Prénom : Anin Arthus
+
+URL du Compte github : https://github.com/TelecomAnin
+
+Nom du projet : numpy/numpy
+
+Description du processus
+
+	* J'ai d'abords procédé à la recherche d'un projet sur github sous une licence libre
+	* Puis j'ai parcouru certains fichiers, des issues et PR pour répondre aux questions du plan ci dessous pour le travail alternatif.
+	* J'ai aussi ouvert l'issue https://github.com/numpy/numpy/issues/10050 pour avoir plus d'information sur le projet.  
+
+1) Projet libre
+
+Mon repository d'étude est https://github.com/numpy/numpy .C'est un projet libre en ce sens qu'il est sous la licence BSD 3-clauses et les clauses de cette License sont décrites à ce lien https://tldrlegal.com/license/bsd-3-clause-license-(revised) .
+
+
+2)Histoire
+
+NumPy est une extension du langage de programmation Python, destinée à manipuler des matrices ou tableaux multidimensionnels ainsi que des fonctions mathématiques opérant sur ces tableaux.
+Ce repository passe pour la première fois sur GitHub le 16 Décembre 2001 bien que numpy ait vu sa première version en 1995 et est à sa dernière version : 1.13.3 (29 septembre 2017). 16 ans après, ce repository connaît toujours des contributions en tenant compte des dernières mises à jour liées aux commits, Pull Request et Issues.
+
+
+3)Gouvernance
+
+Ce repository compte à la date du 23/11/2017 579 contributeurs dont bon nombre sont membres de l'organisation NumPy et les autres sont à leur propre chef ou membres d'autres organisations.
+Suite à mon issue (https://github.com/numpy/numpy/issues/10050  ) posté sur ce repository, un des responsables m'a fait part de 2 liens qui explicitent la gouvernance et la collaboration autour du projet NumPy.
+Le conseil de pilotage est constitué de 7 personnes (Sebastian Berg, Jaime Fernández del Río, Ralf Gommers, Alex Griffing,Charles Harris,Nathaniel Smith, Julian Taylor, Pauli Virtanen).
+La valorisation des contributeurs est essentielle avec la mention d'un membre émérite Travis Oliphant, fondateur du projet sur GitHub qui contribua fortement de 2005-2012. L'organisation à but non lucratif, NumFocus est le comité responsable pour le développement du repository. Aussi faut-il noter qu'un partenaire clé institutionnel est UC Berkeley en la personne de Nathaniel Smith.
+
+
+4) Description et analyse du mode collaboratif
+ 
+    4.1) Contributions réussies : Exemple 1 
+
+eric-wieser a fait merged le PR de ahaldane après 3 jours de discussions. En effet 5 jours plutôt le contributeur ahaldane envoie un PR et deux jours eric-wieser prend connaissance de ce PR puis commence à discuter autour du commentaire laissé par le propriétaire où il fait une proposition d'envoyer une portion de code d'une ligne à la ligne précédente dans une liste. Durant les 3 jours de discussion, eric-wieser (le plus actif sur ce PR) et 2 autres contributeurs proposaient la meilleure pratique à faire. Enfin de compte le propriétaire (ahaldane) du PR approuve la solution de eric-wieser puis modifie son code ce qui permet ensuite à eric-wieser de faire merger son PR. Il faut noter que ces 2 contributeurs (eric-wiser et ahaldane) sont tous deux membres de l'organisation NumPy.
+ Le lien du PR Merged : https://github.com/numpy/numpy/pull/10032
+
+      
+
+    4.2) Contributions réussies : Exemple 2 
+
+Je précise dans ce rapport que le contributeur ahaldane est au compte d'un seule organisation tel le montre son profil GitHub. 
+Le deuxième PR merged que j'évoque est de eric-wieser posté il y avait de cela 7 jours à la date du 20/17/2017.Ce que je trouve intéressant autour de ce PR c'est la question qu'a posé ahaldane avant de merged , je cite :I'd like to merge. Good to go ? Ainsi il laisse la latitude encore aux autres contributeurs de donner leur approbation sur la solution finale proposée ; révélatrice de cette liberté d'expression. Le volet technique ou code était de gérer l'influence des fonctions faisant intervenir le mot UNICODE. Au terme de 24 commentaires, 6 fichiers furent modifiés afin de prendre en compte les solutions apportées.
+Le lien du PR Merged : https://github.com/numpy/numpy/pull/9201
+
+      
+      
+     4.2) Contributions échouées : Exemple 1
+    
+La majorité des PR qui n'ont pas abouti (closed) ont été “closed” par celui même qui a envoyé le PR après quelques discussions avec d'autres contributeurs du projet. De ce fait, le PR #10040 était du contributeur matip qui souhaitait corriger le bug déclaré dans l’issue #9972, a dû lui-même “closed” son PR quand un contributeur lui a fait savoir de se référer au PR #10042 qui a été “merged” et qui répondait au mieux au bug #9972. 
+Toutefois il faut préciser que le profil de matip (https://github.com/mattip) nous laisse transparaître qu’il n’est au compte d’aucune organisation, ni moins l’organisation NumPy. Est-ce pour cela que son PR n’a pas abouti ?  Non, en effet la discussion qui a eu lieu autour du PR #10042 révélait un souci de fonctionnement d’une version du code python. Donc pour dire que le refus d’accepter ce PR était objectif.  
+Le lien du PR Closed : https://github.com/numpy/numpy/pull/10040
+
+
+
